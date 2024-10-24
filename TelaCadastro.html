@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: brown;
+            text-align: center;
+        }
+        form {
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        input[type="text"], input[type="date"], input[type="number"], input[type="file"], select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+        button {
+            background-color: brown;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+        button:hover {
+            background-color: darkred;
+        }
+        iframe {
+            width: 100%;
+            height: 200px;
+            border: 1px solid #ccc;
+        }
+        @media (max-width: 600px) {
+            form {
+                padding: 10px;
+            }
+            button {
+                padding: 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulário de Cadastro</h1>
+    <form action="file:///C:/Users/TIDEV39/Documents/projeto-breno/projeto-aulas/cadastroEnviado.html"" method="post">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" placeholder="Insira seu nome" required>
+
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" placeholder="Insira seu e-mail" required>
+
+        <label for="celular">Celular:</label>
+        <input type="text" id="celular" name="celular" placeholder="(XX) XXXXX-XXXX" required>
+
+        <label for="telefone">Telefone:</label>
+        <input type="text" id="telefone" name="telefone" placeholder="(XX) XXXXX-XXXX">
+
+        <label for="genero">Gênero:</label>
+        <select id="genero" name="genero" required>
+            <option value="">Selecione seu gênero</option>
+            <option value="feminino">Feminino</option>
+            <option value="masculino">Masculino</option>
+            <option value="outro">Outro</option>
+        </select>
+
+        <label for="data_nascimento">Data de Nascimento:</label>
+        <input type="date" id="data_nascimento" name="data_nascimento" required>
+
+        <label for="idade">Idade:</label>
+        <input type="number" id="idade" name="idade" min="0" required>
+
+        <label>Escolha o idioma que possui maior fluência:</label>
+        <input type="radio" id="idioma1" name="idioma" value="espanhol" required>
+        <label for="idioma1">Espanhol</label>
+        <input type="radio" id="idioma2" name="idioma" value="ingles">
+        <label for="idioma2">Inglês</label>
+        <input type="radio" id="idioma3" name="idioma" value="italiano">
+        <label for="idioma3">Italiano</label>
+        <input type="radio" id="idioma4" name="idioma" value="portugues">
+        <label for="idioma4">Português</label>
+        <input type="radio" id="idioma5" name="idioma" value="nenhum">
+        <label for="idioma5">Nenhum</label>
+        <input type="radio" id="idioma6" name="idioma" value="outro">
+        <label for="idioma6">Outro</label>
+
+        <label for="outro_idioma">O outro idioma é:</label>
+        <input type="text" id="outro_idioma" name="outro_idioma" placeholder="Insira o outro idioma...">
+
+        <label for="upload_arquivo">Insira o seu currículo:</label>
+        <input type="file" id="upload_arquivo" name="upload_arquivo" required>
+
+        <button type="submit">Enviar</button>
+    </form>
+
+    <div style="text-align: left; margin-top: 20px;">
+        <a href="home.html">
+            <img src="https://static.vecteezy.com/ti/vetor-gratis/p1/22013913-casa-icone-ilustracao-imagem-vetor.jpg" width="70" height="70" alt="Home">
+        </a>
+    </div>
+</body>
+</html>

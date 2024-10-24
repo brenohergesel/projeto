@@ -1,0 +1,109 @@
+body {
+    background-color: #333; /* Cor de fundo escura */
+    font-family: Arial, Helvetica, sans-serif;
+    color: white; /* Cor do texto */
+    margin: 0; 
+    text-align: center; 
+}
+
+header {
+    background-color: black; /* Cor de fundo do cabeçalho */
+    color: aliceblue; /* Cor do texto no cabeçalho */
+    padding: 20px; /* Espaçamento interno */
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Espaçamento entre logo e menu */
+}
+
+.logo img {
+    width: 250px; /* Largura da logo */
+    height: auto; /* Altura automática para manter proporção */
+}
+
+nav ul {
+    list-style: none; /* Remove marcadores da lista */
+    margin: 0; 
+    padding: 0; 
+    display: flex; /* Itens em linha */
+}
+
+nav ul li {
+    margin-right: 40px; /* Espaçamento entre os itens do menu */
+    font-size: 18px; /* Tamanho da fonte */
+}
+
+nav ul li a {
+    color: aliceblue; /* Cor dos links */
+    text-decoration: none; /* Remove sublinhado */
+    transition: color 0.3s; /* Transição suave para a cor */
+}
+
+nav ul li a:hover {
+    color: #ffa500; /* Cor ao passar o mouse */
+}
+
+.title {
+    font-size: 25px; /* Tamanho da fonte do título */
+    font-weight: bold; 
+    margin: 20px 0; 
+}
+
+.imagenslogos {
+    display: flex; 
+    justify-content: center; /* Centraliza as imagens */
+    gap: 50px; /* Espaçamento entre as imagens */
+    margin: 20px 0; 
+}
+
+.imagenslogos img {
+    height: 300px; /* Altura das imagens */
+    width: auto; /* Largura automática para manter proporção */
+    cursor: pointer; /* Cursor como ponteiro */
+    transition: transform 0.3s; /* Transição suave ao passar o mouse */
+}
+
+.imagenslogos img:hover {
+    transform: scale(1.05); /* Efeito de aumento ao passar o mouse */
+}
+
+.timeline-event {
+    background: #c2c2c2; /* Cor de fundo dos eventos */
+    border-radius: 5px; /* Bordas arredondadas */
+    padding: 10px; /* Espaçamento interno */
+    margin: 10px 0; /* Margem vertical */
+    position: relative; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+.event-date {
+    font-weight: bold; /* Negrito para a data do evento */
+    color: #555; /* Cor da data */
+    margin-bottom: 5px; /* Margem abaixo da data */
+}
+
+.event-content {
+    padding: 10px; /* Espaçamento interno do conteúdo do evento */
+}
+
+/* Menu responsivo para Dispositivos */
+.menu-icon {
+    display: none; /* Oculta o ícone do menu por padrão */
+    flex-direction: column; /* Para o layout do ícone */
+    cursor: pointer; /* Cursor como ponteiro */
+}
+
+/* Ajustes para telas pequenas */
+@media screen and (max-width: 600px) {
+    nav ul {
+        display: none; /* Oculta o menu padrão */
+    }
+
+    .menu-icon {
+        display: flex; /* Exibe o ícone do menu */
+    }
+
+    /* Estilo do menu expansível */
+    .menu-expanded {
+        display: flex; /* Exibe o menu quando expandido */
+    }
+}
